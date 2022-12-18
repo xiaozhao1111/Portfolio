@@ -10,27 +10,24 @@ body {
 
 header {
     background-color: aqua;
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center; 
 }
-header h1, nav {
-    display: inline-block;
-}
-header h1 {
-    margin-left: 20px;
+.left, .right{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-header nav {
-    margin-left: 30%;
+nav a{
+    padding: 0px 10px;
 }
 
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 30px;
-    font-size: 16px;
-}
 
 .banner {
     width: 100%;
@@ -167,4 +164,15 @@ header nav ul li {
 #contact ul li {
     display: inline-block;
     margin-left: 40px;
+}
+
+@media screen and (max-width:768px) {
+
+.first-project, .other-project {
+    width: 90%;
+}
+#contact ul li {
+    display: block;
+}
+
 }
