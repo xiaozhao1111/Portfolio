@@ -9,23 +9,27 @@ body {
 }
 
 header {
-    background-color: aqua;
+    background-color: #383e3f;
+    padding: 5px;
     display: flex;
-    gap: 30px;
-    padding: 0px;
-    justify-content: center;
-    align-items: center; 
-}
-.left, .right{
-    height: 50px;
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-
+}
+header h1 {
+    width: 300px;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #9ecacc;
+    text-align: center;
+}
+header nav {
+    margin-left: 30%;
 }
 
 nav a{
     padding: 0px 10px;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -153,26 +157,40 @@ nav a{
     background-size: 100% 100%;
 }
 
-#contact .section {
-    margin: auto;
-    justify-content: center;
-}
-#contact ul {
-    list-style: none;
+#contact .section-content {
+    display: flex;
+    align-items: center;
 }
 
-#contact ul li {
+#contact div nav {
     display: inline-block;
-    margin-left: 40px;
+}
+
+#contact nav a {
+
+    color: #383e3f;
+    margin-left: 15px;
 }
 
 @media screen and (max-width:768px) {
 
+header nav {
+    margin-left: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
 .first-project, .other-project {
     width: 90%;
 }
-#contact ul li {
-    display: block;
+#contact .section-content nav {
+    display: flex;
+    flex-direction: column;
 }
 
 }
